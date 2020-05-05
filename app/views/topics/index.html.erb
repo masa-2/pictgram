@@ -14,7 +14,7 @@
               <% end %>
             <% else %>
               <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
-                <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon-red' %>
+                <i class="fas fa-heart" aria-hidden="true"></i>
               <% end %>
             <% end %>
             <%= topic.favorite_users.count %>
